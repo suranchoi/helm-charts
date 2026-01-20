@@ -21,7 +21,7 @@ annotations:
 dependencies:
   - name: ollama
     #repository: https://otwld.github.io/ollama-helm/
-    repository: file:///data2/helm-charts/charts/open-webui/charts/ollama-1.37.0.tgz
+    repository: file:///data2/helm-charts/charts/open-webui/charts/
     version: ">=0.24.0"
     import-values:
       - child: service
@@ -29,7 +29,7 @@ dependencies:
     condition: ollama.enabled
   - name: pipelines
     #repository: https://helm.openwebui.com
-    repository: file:///data2/helm-charts/charts/open-webui/charts/pipelines-0.10.0.tgz
+    repository: file:///data2/helm-charts/charts/open-webui/charts/
     version: ">=0.0.1"
     import-values:
       - child: service
@@ -37,6 +37,6 @@ dependencies:
     condition: pipelines.enabled
   - name: tika
     #repository: https://apache.jfrog.io/artifactory/tika
-    repository: file:///data2/helm-charts/charts/open-webui/charts/tika-3.2.2.tgz
+    repository: file:///data2/helm-charts/charts/open-webui/charts/
     version: ">=2.9.0"
     condition: tika.enabled
