@@ -420,7 +420,7 @@ hostAliases: []
 service:
   # -- Service type to expose Open WebUI pods to cluster. Options are ClusterIP, NodePort, LoadBalancer, or ExternalName
   # @section -- Service configuration
-  type: ClusterIP
+  type: NodePort
   # -- Additional annotations to add to the Service
   # @section -- Service configuration
   annotations: {}
@@ -432,7 +432,7 @@ service:
   containerPort: 8080
   # -- Node port to use if service type is NodePort
   # @section -- Service configuration
-  nodePort: ""
+  nodePort: "30000"
   # -- Additional custom labels to add to the Service metadata
   # @section -- Service configuration
   labels: {}
