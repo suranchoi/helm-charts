@@ -432,7 +432,7 @@ service:
   containerPort: 8080
   # -- Node port to use if service type is NodePort
   # @section -- Service configuration
-  nodePort: "30000"
+  nodePort: "30080"
   # -- Additional custom labels to add to the Service metadata
   # @section -- Service configuration
   labels: {}
